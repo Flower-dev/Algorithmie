@@ -32,31 +32,44 @@ Créer une fonction appelé parseToRoman qui, pour un nombre donné, va retourne
 
 On rappelle la valeur des chiffres romains :
 I=1 V=5 X=10 L=50 C=100 D=500 M=1000
-on écrit les symboles du plus grand au plus petit et ils peuvent s'additionner mais si il y 4 fois la meme valeur de suite alors on utilise la notion soustractive en retranchant à la valeur suppérieure 1
+on écrit les symboles du plus grand au plus petit et ils peuvent s'additionner mais si il y 4 fois la meme valeur de suite alors on utilise la notion soustractive en retranchant à la valeur supérieure 1
 traiter des nombres à partir de 1 (pour l'anecdote les romains ne connaissaient pas le 0)
 
 **/
 
 function parseToRoman(number) {
   numberOfThousand = parseInt(number/1000)
-  console.log(numberOfThousand)
   moduloNumber = number % 1000
-  console.log(moduloNumber)
-  console.log("M".repeat(numberOfThousand))
+
+  numberOfFiveHundred = parseInt(moduloNumber/500)
+  moduloNumber = moduloNumber % 500
+
   numberOfHundred = parseInt(moduloNumber/100)
-  console.log(numberOfHundred)
   moduloNumber = moduloNumber % 100
-  console.log(moduloNumber)
-  console.log("C".repeat(numberOfHundred))
+
+  numberOfFifty = parseInt(moduloNumber/50)
+  moduloNumber = moduloNumber % 50
+
   numberOfTen = parseInt(moduloNumber/10)
-  console.log(numberOfTen)
   moduloNumber = moduloNumber % 10
-  console.log(moduloNumber)
-  console.log("X".repeat(numberOfTen))
-  console.log("M".repeat(numberOfThousand),"C".repeat(numberOfHundred),"X".repeat(numberOfTen))
+
+  numberOfFive = parseInt(moduloNumber/5)
+  moduloNumber = moduloNumber % 5
+
+  numberOfOne = parseInt(moduloNumber/1)
+  moduloNumber = moduloNumber % 1
+
+  var output = "M".repeat(numberOfThousand)
+  output += "D".repeat(numberOfFiveHundred)
+  output += "C".repeat(numberOfHundred)
+  output += "L".repeat(numberOfFifty)
+  output += "X".repeat(numberOfTen)
+  output += "V".repeat(numberOfFive)
+  output += "I".repeat(numberOfOne)
+
+  console.log(output)
 }
 
-Truc à faire pour les nombres 5
 
 parseToRoman(1234); // === "MCCXXXIV"
 parseToRoman(4); // === "IV"
