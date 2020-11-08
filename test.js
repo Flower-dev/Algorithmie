@@ -94,16 +94,12 @@ function parseToRoman(number) {
   console.log(output)
 }
 
-
-parseToRoman(1234); // === "MCCXXXIV"
-parseToRoman(4); // === "IV"
-parseToRoman(37); // === "XXXVII"
-parseToRoman(143); // === "CXLIII"
-
-
+/**
 CONSIGNE :
 
 On va faire notre petite machine de Turing et on va craquer un algorithme de chiffrement. Nous allons donc essayer de craquer ce qu’on appelle le ROT13 (ou Rotate By 13 Places). L’idée est de décaler chacune des lettres de l’alphabet de 13 places. Autrement dit, le H devient le U, le E devient le R, etc.
+**/
+
 
 function transformToRot13(stringToTransform) {
 }

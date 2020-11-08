@@ -1,7 +1,8 @@
-Consigne :
+/**CONSIGNE
 You will be given N binary numbers.
 Print the decimal sum of the odd numbers.
-/**le problème a résoudre : tranformer les nombres binaires d'une suite en nombres décimaux et additionner tous les nombres impairs entre eux**/
+le problème a résoudre : tranformer les nombres binaires d'une suite en nombres décimaux et additionner tous les nombres impairs entre eux
+**/
 
 var moduloNumber = 0;
 var sumOfNumber = 0;
