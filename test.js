@@ -117,7 +117,13 @@ M <=> Z
 
 Pseudo code : faire une fonction dans le but de déchiffrer chacune des lettres du mot ou de la phrase
 faire cela lettre par lettre
-faire lettre + 13 
+faire lettre + 13
+transformer la chaine de caractère en tableau
+
+Créer une nouvelle variable comprenant stringToTransform
+la transformer en tableau
+
+
 **/
 
 
