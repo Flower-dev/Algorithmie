@@ -77,7 +77,7 @@ function parseToRoman(number) {
   numberOfOne = parseInt(moduloNumber/1)
   moduloNumber = moduloNumber % 1
 
-  var output = "M".repeat(numberOfThousand)
+  var output = "M".repeat(numberOfThousand) /**pour facilité la lecture et la variable utiliser -> `output +=`**/
   output += "CM" .repeat(numberOfNineHundred)
   output += "D".repeat(numberOfFiveHundred)
   output += "CD" .repeat(numberOfFourHundred)
