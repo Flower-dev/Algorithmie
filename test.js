@@ -20,7 +20,7 @@ for (let i = 0; i < N; i++) { /*créer une boucle qui va répéter l'opération 
     let numberDecimal = parseInt(S,2); /*création d'une variable pour convertir la ligne lue en nombre décimal*/
     moduloNumber = numberDecimal % 2;
     if (moduloNumber == 1) {
-      sumOfNumber = sumOfNumber + numberDecimal /**sumOfNumber = somme des nombres trouvés précédemment + nombre trouvé à la boucle actuelle*/
+      sumOfNumber = sumOfNumber + numberDecimal; /**sumOfNumber = somme des nombres trouvés précédemment + nombre trouvé à la boucle actuelle*/
     }
 }
 console.log(sumOfNumber); /*pour afficher le résultat*/
@@ -97,7 +97,6 @@ function parseToRoman(number) {
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-
 /*
 CONSIGNE :
 
@@ -121,7 +120,7 @@ M <=> Z
 
 Pseudo code : faire une fonction dans le but de déchiffrer chacune des lettres du mot ou de la phrase
 faire cela lettre par lettre
-faire lettre + 13
+faire lettre - 13
 transformer la chaine de caractère en tableau
 
 Créer une nouvelle variable comprenant stringToTransform
@@ -129,23 +128,39 @@ la transformer en tableau
 
 
 */
-
+let alphabetChiffre =   "NOPQRSTUVWXYZABCDEFGHIJKLM"; /*input*/
+let alphabetDechiffre = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"; /*output*/
 
 function transformToRot13(stringToTransform) {
+  for (let i=0; i<stringToTransform.length; i++){
+
+    for (let j=0; j<alphabetChiffre.length; j++){
+      if (stringToTransform[i] == alphabetChiffre[j]){
+        console.log(alphabetDechiffre[j]);
+      }
+    }
+
+  }
 }
 
-toRot13('URYYB JBEYQ'); // HELLO WORLD
-toRot13('BCRAPYNFFEBBZF'); // OPENCLASSROOMS
-toRot13('PRPV RFG ZBA PBQR FRPERG'); // CECI EST MON CODE SECRET
+transformToRot13('URYYB JBEYQ'); // HELLO WORLD
+transformToRot13('BCRAPYNFFEBBZF'); // OPENCLASSROOMS
+transformToRot13('PRPV RFG ZBA PBQR FRPERG'); // CECI EST MON CODE SECRET
 
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 /*CONSIGNE 
+
 comment afficher la dernière valeur d'un tableau ? 
+
+Commencer par chercher combien de valeurs il y a dans le tableau avec .length
+Pour trouver l'index, il faut faire le nombre trouvé avec .length - 1
 */
 
 let sequenceNumber = [1, 13, 54, 96, 10, 3, 46, 38];
+
+sequenceNumber[sequenceNumber.length - 1];
 
 
 
