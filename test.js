@@ -145,8 +145,7 @@ toRot13('PRPV RFG ZBA PBQR FRPERG'); // CECI EST MON CODE SECRET
 comment afficher la dernière valeur d'un tableau ? 
 */
 
-let sequence = [1, 13, 54, 96, 10, 3, 46, 38];
-
+let sequenceNumber = [1, 13, 54, 96, 10, 3, 46, 38];
 
 
 
