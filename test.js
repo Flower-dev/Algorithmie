@@ -182,6 +182,44 @@ let sequenceNumber = [1, 13, 54, 96, 10, 3, 46, 38];
 
 sequenceNumber[sequenceNumber.length - 1];
 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+/*CONSIGNE 
+
+écrire une fonction pour convertir un nombre de secondes en nombre de minutes
+*/
 
 
+var convertToMinutes = function(secondes){
+  
+  if (secondes === undefined){
+    secondes = 0
+  }
+ 
+  return secondes / 60
+}
 
+convertToMinutes(3600)
+convertToMinutes(50000)
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+/*CONSIGNE
+
+Déclarer deux variables et assignez leurs des valeurs numériques, en n'utilisant qu'un seul mot-clé var.
+*/
+
+var maValeur_1 = 12,
+    maValeur_2 = 35;
+
+/*CONSIGNE 
+
+Voici une variable. Ecrivez une condition pour savoir si le contenu de cette variable 
+est supérieur à 10. Si tel est le cas, affichez une fenêtre alert() pour en informer l'utilisateur.
+*/
+
+var myNumber = 15;
+
+if (myNumber > 10){
+	 alert('le nombre est supérieur à 10');
+}
