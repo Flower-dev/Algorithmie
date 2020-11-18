@@ -258,12 +258,16 @@ var year = 2016;
 /*On teste d'abord si l'année est divisible par 4 avec year % 4 === 0 tout en s'assurant que ce n'est pas divisible par 100, 
 avec year % 100 > 0. Et avec ||, on regarde si ce n'est quand même pas divisible par 400*/
 
-if ((year % 4 === 0 && year % 100 > 0) || (year % 400 === 0)){
-	console.log(year + "est bissextile");
-} else {
-	console.log(year + "n'est pas bissextile")
-	}
-
 var year = 2003
 
-if ((year % 4 === 0 && year % 100 > 0))
+if ((year % 4 === 0 && year % 100 > 0)|| (year % 400 === 0)){
+  console.log(year + "est une année bissextile");
+} else {
+  console.log(year + "n'est pas une année bissextile")
+  } 
+
+
+Eliminer les nombres et ne garder que les lettres : 
+
+H2a3m12z13a4i O45t67a78l8a -> Hamzai Otala
+H12a12m12z12a12i m12o12c12hakhar -> Hamzai mochakhar
