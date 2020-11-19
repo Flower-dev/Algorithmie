@@ -67,6 +67,48 @@ for (var i = 0; i < line.length; i++) { // parcours line
 }
 
 
-// ------ opti3 : boolean instead of 1
-// ------ opti4 : create a function (isNumber()) , must return a boolean
-// ------ opti5 : use include
+// ------------ Opti 3 -------------- boolean instead of 1
+
+let number = "0123456789";
+let letter = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+
+let line = "H2a3m12z13a4i"; //readline();
+for (var i = 0; i < line.length; i++) { // parcours line
+  let rappel = false;
+
+  for (var j = 0; j <number.length; j++) {
+   if (line[i] === number[j]){
+      rappel = true
+      break
+    }
+  }
+  if (rappel == false){
+    console.log(line[i])
+  }
+}
+
+
+// ------------ Opti 4 -------------- create a function (isNumber()) , must return a boolean
+
+let number = "0123456789";
+let letter = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+
+function isNumber(line){ 
+var line = "H2a3m12z13a4i"; //readline();
+for (var i = 0; i < line.length; i++) { // parcours line
+  let rappel = false;
+
+  for (var j = 0; j <number.length; j++) {
+   if (line[i] === number[j]){
+      rappel = true
+      break
+    }
+  }
+  if (rappel == false){
+    console.log(line[i])
+    }
+  } 
+}
+
+
+// ------------ Opti 5 --------------  use include
