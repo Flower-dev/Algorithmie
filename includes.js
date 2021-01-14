@@ -93,22 +93,28 @@ for (var i = 0; i < line.length; i++) { // parcours line
 let number = "0123456789";
 let letter = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 
-function isNumber(line){ 
-var line = "H2a3m12z13a4i"; //readline();
-for (var i = 0; i < line.length; i++) { // parcours line
-  let rappel = false;
+function challenge(line){ 
 
-  for (var j = 0; j <number.length; j++) {
-   if (line[i] === number[j]){
-      rappel = true
-      break
+  for (var i = 0; i < line.length; i++) { // parcours line
+    let rappel = false;
+
+    for (var j = 0; j <number.length; j++) {
+      if (line[i] === number[j]){
+        rappel = true
+        break
+      }
     }
-  }
-  if (rappel == false){
-    console.log(line[i])
+
+    if (rappel == false){
+      console.log(line[i])
     }
   } 
 }
+
+var line = "H2a3m12z13a4i"; //readline();
+challenge(line)
+
+
 
 
 // ------------ Opti 5 --------------  use include
