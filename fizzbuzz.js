@@ -6,15 +6,20 @@ Si le chiffre est divisible par 3 et 5, affiche le mot « fizzbuzz ».
 Sinon fait simplement apparaitre le chiffre.
 */
 
-for (var i=0; i<=100; i++){
-    if (i%3 && i%5 === 0){
-        return "fizzbuzz";
-    } ifelse (i%3 === 0){
-        return "fizz";
-    };
+for (let i = 1; i =< 100; i++) {
+    if (i % 3 == 0 && i % 5 == 0) {
+        console.log("fizzbuzz");
+    } 
     
+    else if (i % 3 == 0) {
+       console.log("fizz"); 
+    }
+
+    else if (i % 5 == 0) {
+        console.log("buzz"); 
+     }
+
+    else {
+        console.log(i);
+    }
 }
-
-console.log(i)
-
-//à terminer
